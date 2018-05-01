@@ -1,6 +1,8 @@
 language: go
-
-go:
-  "1.10.x"
-
+go: 1.10.x
 script: go test ./...
+deploy:
+  provider: heroku
+  api_key:
+    secure: sRwbTMeUuacQJakzlUuaqf0+pVQnRvg/e7sAn5ZjhGG+RVSTLwpO08TMUjNT1rzg4R/8rnhMQ31IZfBHTiIUNzGM0n3S0wemvlYLATdVcu1SJuS1mnuLkzl323dYp7QIkRRYZqVh6G692+/a0Ew4Bt8/jvU0IUnMHyQ1E4zJcE2ZBfaWr4qhCOksgr5UjB6XZnRNyaJo4009WXGj0ZJw6T7VfFV1PtJO68/mUJ20AGhJQYvnkaeYAHDp48mXfM9KlMAOmeU95S488OsX1NbaDZiZLyln1/SGz7T4IXEw+LdSva2EeAg66K5hbtKSZQCkRA4NFljzDgjVvnTIYvMER67p1MYbEWdFOg73DD7enKO+TYtInmZ+fAjVY6uBgB0uxDSEwvmgUMChOyDdBLV8PykJxN4eNylMuAhdWN8nSr552JXFEUnyhaF99LY6eHKhDro+ERha9xeyJCO1G2RPRgV6CHmsna6RbqDdDuE2EVGJbLio1rRRXS4t4hkQI/VJpSRaP3gSvj2YkUdGbOzvLMFtpgFCOuCzoTorjVPaxvF3qDPLokrt344D4CUDKcESx//d9gFzVzVQevOmjurZqN3kFVqE4Nm2L5VIj4VtN6i14JUg205LIXQ6E5t+iuj1n3tqSzSdmpBv3vCVCwygK/o0ulfJD0v9BPLAwIQki/c=
+  on: master
