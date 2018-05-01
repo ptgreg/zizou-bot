@@ -12,7 +12,6 @@ import (
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
-	"github.com/russross/blackfriday"
 )
 
 var (
@@ -22,8 +21,9 @@ var (
 
 func repeatFunc(c *gin.Context) {
 	var buffer bytes.Buffer
+	buffer.WriteString("Hello from Zizou!")
 	for i := 0; i < repeat; i++ {
-		buffer.WriteString("Hello from Go!")
+		buffer.WriteString("C'est bien.")
 	}
 	c.String(http.StatusOK, buffer.String())
 }
@@ -89,11 +89,7 @@ func main() {
 		c.HTML(http.StatusOK, "index.tmpl.html", nil)
 	})
 
-	router.GET("/mark", func(c *gin.Context) {
-		c.String(http.StatusOK, string(blackfriday.MarkdownBasic([]byte("**hi!**"))))
-	})
-
-	router.GET("/repeat", repeatFunc)
+	router.GET("/zizou", repeatFunc)
 	router.GET("/db", dbFunc)
 
 	router.Run(":" + port)
