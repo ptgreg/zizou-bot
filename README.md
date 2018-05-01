@@ -1,5 +1,5 @@
 
-# zizou bot
+# zizou bot [![Build Status](https://travis-ci.org/ptgreg/zizou-bot.svg?branch=master)](https://travis-ci.org/ptgreg/zizou-bot)
 
 A barebones Go app, which can easily be deployed to Heroku.
 
