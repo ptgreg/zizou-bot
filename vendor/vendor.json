@@ -77,5 +77,8 @@
 			"revision": "d627af88ac021317a280d320986282a6dc97549a"
 		}
 	],
-	"rootPath": "github.com/ptgreg/zizou-bot"
+	"rootPath": "github.com/ptgreg/zizou-bot",
+	"heroku": {
+		"goVersion": "go1.10.1"
+	}
 }
