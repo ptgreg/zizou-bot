@@ -1,0 +1,11 @@
+{
+  "name": "Zizou Bot",
+  "description": "A slack bot to log Fifa games.",
+  "keywords": [
+    "zizou",
+    "fifa",
+    "game"
+  ],
+  "website": "http://github.com/ptgreg/zizou-bot",
+  "repository": "http://github.com/ptgreg/zizou-bot"
+}
